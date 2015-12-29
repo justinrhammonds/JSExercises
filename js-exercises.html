@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Exercises</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:700|Muli' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <h3>JS Exercises</h3>
+        </a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="navbar-left">
+          <li><a href="#numbers">Number Sets</a></li>
+        </ul>
+        <ul class="navbar-left">
+          <li><a href="#factorials">Factorials</a></li>
+        </ul>
+        <ul class="navbar-left">
+          <li><a href="#multiples">Multiples</a></li>
+        </ul>
+        <ul class="navbar-left">
+          <li><a href="#palindromes">Palindromes</a></li>
+        </ul>
+      </div>
+  </nav>
+  <header class="jumbotron">
+    <h1 class="title">JavaScript Exercises</h1>
+  </header>
+  <main>
+    <section id="numbers">
+      <h2>Let's Play With Numbers!</h2>
+      <p>Enter six numbers in the spaces provided below.</p>
+      <input id="num1" type="text">
+      <input id="num2" type="text">
+      <input id="num3" type="text">
+      <br>
+      <input id="num4" type="text">
+      <input id="num5" type="text">
+      <input id="num6" type="text">
+      <p>Click the "Find Answer" button beside each question below to reveal the answer. But just for fun try to solve each question first...</p>
+      <ol>
+        <li>Which number is least?</li>
+        <button id="btnLeast" class="btn btn-default btn-md">Find Answer</button>
+        <p class="hidden">Answer Text</p>
+        <li>Which number is greatest?</li>
+        <button id="btnGreatest" class="btn btn-default btn-md">Find Answer</button>
+        <p class="hidden">Answer Text</p>
+        <li>What is the average of all numbers combined?</li>
+        <button id="btnAvg" class="btn btn-default btn-md">Find Answer</button>
+        <p class="hidden">Answer Text</p>
+        <li>What is the total sum of all the numbers?</li>
+        <button id="btnSum" class="btn btn-default btn-md">Find Answer</button>
+        <p class="hidden">Answer Text</p>
+        <li>What is the product of all of the numbers?</li>
+        <button id="btnProduct" class="btn btn-default btn-md">Find Answer</button>
+        <p class="hidden">Answer Text</p>
+      </ol>
+    </section>
+    <hr class="seperator">
+    <section id="factorials">
+      <h2>Factorial Fun!</h2>
+      <p>
+        A "factorial" is simply a product, which is indicated by an exclamation mark. For example, "four factorial" is written as "4!" and means 1×2×3×4 = 24. In general, n! ("n factorial") means the product of all whole numbers from 1 to n (n! = 1×2×3×...×n).
+      </p>
+      <p>
+        Enter a number in the space provided, and we'll calculate the factorial of the number for you!
+      </p>
+      <input id="userFactorial" type="number">
+      <button id="calcFactorial" class="btn btn-default btn-md">Calculate Factorial</button>
+      <p class="hidden">Answer Text</p>
+    </section>
+    <hr class="seperator">
+    <section id="multiples">
+      <h2>Multiplicity!</h2>
+      <p>
+        Enter two numbers below. The numbers should be whole numbers between 1 and 100. Once entered, click the "submit" button. Doing so will calculate all multiples of these numbers between 1 and 100. Multiples of the first number will instead show the word "Fizz", and all multiples of the second number will instead show the word "Buzz". Any number that is in fact a multiple of both numbers you selected, will instead show " FizzBuzz". Alright, let's get started...
+      </p>
+      <p>Select Two Numbers (2-99)....</p>
+      <input id="m1" type="number" min="2" max="99">
+      <input id="m2" type="number" min="2" max="99">
+      <button id="runMultiples" class="btn btn-default btn-md">FizzBuzz the Multiples!</button>
+      <br>
+      <br>
+      <p id="numberContainer" class="light-blue"></p>
+    </section>
+    <hr class="seperator">
+    <section id="palindromes">
+      <h2>
+        To Palindrome, or Not to Palindrome?</h3>
+        <p>A 'palindrome' is any word that is spelled the same both forwards and backwards, such as 'radar'. Enter any word below, and I will tell you whether it is a palindrome or not!</p>
+        <input id="userWord" type="text">
+        <button id="checkPalindrome" class="btn btn-default btn-md">Is this a Palindrome?</button>
+        <p class="hidden">Answer</p>
+    </section>
+
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
