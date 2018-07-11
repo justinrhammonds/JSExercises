@@ -1,6 +1,5 @@
 #### JavaScript Exercises 
 
-These were really the first functions and programs I ever wrote (really). 
-Some pretty basic methods, some pretty popular code challenges solved here and displayed with some basic usage of Boostrap. 
+Some pretty simple methods from early on in my experience, and some pretty common code challenges solved here and displayed using basic Boostrap. 
 
 *This project pretty much marks the first time I ever used Bootstrap and jQUery, let alone vanilla JS.*
